@@ -35,6 +35,10 @@
     background-color: rgb(251, 144, 3);
 }
 
+.name-product {
+    overflow: auto;
+}
+
 .onder:hover {
     background-color: rgb(159, 94, 10);
     cursor: pointer;
@@ -68,6 +72,9 @@
 
 @media screen and (max-width: 780px) {
     .products-rows {
+        width: 80%;
+    }
+    .product {
         width: 100%;
     }
 }

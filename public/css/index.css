@@ -89,3 +89,9 @@ body {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  @media screen and (max-width: 780px) {
+    .slide-container {
+      width: 100%;
+    }
+}
