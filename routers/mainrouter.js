@@ -5,4 +5,8 @@ router.get('/', (req,res)=>{
     res.render('index.ejs')
 })
 
+router.get('/product', (req,res) =>{
+    res.render('product')
+})
+
 module.exports = router

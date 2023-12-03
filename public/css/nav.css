@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--body);
+    font-family: 'Kanit', sans-serif;
+}
+
 :root {
     --navbar: #ffffff;
     --body: #efefef;
     --fontsize: 19px;
     --profile: rgb(28, 122, 184);
-    --hover: rgb(33, 139, 239);
 }
 
 header {
