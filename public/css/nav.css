@@ -1,0 +1,143 @@
+:root {
+    --navbar: #ffffff;
+    --body: #efefef;
+    --fontsize: 19px;
+    --profile: rgb(28, 122, 184);
+    --hover: rgb(33, 139, 239);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar);
+    padding: 10px 7px;
+    height: 4.5rem;
+}
+
+.logo a img {
+    width: 250px;
+    height: 100px;
+    pointer-events: none;
+}
+
+.menu {
+    display: block;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 10px;
+    padding: 0;
+}
+
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.active {
+    border-bottom: 5px solid var(--profile);
+}
+
+.menu ul li:hover {
+    border-bottom: 5px solid var(--profile);
+}
+
+.menu-right {
+    display: flex;
+}
+
+.icon-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-profile span {
+    padding-right: 10px;
+}
+
+.menu-icon, .icon-profile-m {
+    display: none;
+}
+
+.popup, .content {
+    display: none;
+}
+
+.icon-profile-m {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .content {
+        display: block;
+    }
+    .icon-profile-m {
+        display: block;;
+    }
+    .popup-user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & span {
+            padding-right: 10px;
+        }
+    }
+    .icon-profile {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .popup {
+        display: none;
+        position: fixed;
+        top: 79px;
+        right: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        overflow: auto;
+        z-index: 1;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+        
+    }
+    .content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .content ul li {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+    }
+    .content ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 19px;
+    }
+    .content ul li:hover {
+        background-color: #ccc;
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+    .hr-popup {
+        border: none;
+        width: 100%;
+        height: 2px;
+        background-color: #ccc;
+        border-radius: 10px;
+    }
+}
