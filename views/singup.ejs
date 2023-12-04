@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="shortcut icon" href="images/NLYY.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/singup.css">
+</head>
+<body>
+    <div class="container-singup">
+        <div class="content-singup">
+            <h2>สมัครสมาชิก</h2>
+            <form action="/singup" method="post">
+                <label for="username">ชื่อผู้ใช้ :</label>
+                <input type="text" name="username">
+
+                <label for="email">อีเมล :</label>
+                <input type="email" name="email" required>
+
+                <label for="password">รหัสผ่าน :</label>
+                <input type="password" name="password">
+
+                <label for="password-confirm">ยืนยันรหัสผ่าน :</label>
+                <input type="password" name="password-confirm">
+
+                <input type="submit" value="สมัครสมาชิก">
+
+                <p>หรือคุณมีบัญชีแล้ว <a href="/auth/singin">เข้าสู่ระบบ</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ของคุณ</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="shortcut icon" href="images/NLYY.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <%-  include('nav') %>
+    
+    <section class="container-profile">
+        <div class="content-pf">
+            <div class="profile-left">
+                <div class="content-left-c1">
+                    <div class="profile-pic">
+                        <img src="images/user-avatar.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="profile-right-info">
+                <div class="title-user">
+                    <h2>ข้อมูลโปรไฟล์ของคุณ</h2>
+                </div>
+                <form action="/profile" method="get">
+                    <label for="username">ชื่อผู้ใช้ :</label>
+                    <input type="text" name="username" value="username">
+    
+                    <label for="email">อีเมล :</label>
+                    <input type="email" name="email" value="email@gmail.com">
+    
+                    <label for="password">รหัสผ่าน :</label>
+                    <input type="password" name="password" value="1234567890">
+
+                    <label for="">เลือกโปรไฟล์</label>
+                    <input type="file" name="fileprofile">
+
+                    <input class="btn-edit-profile" type="submit" value="แก้ไขโปรไฟล์">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <%-  include('footer') %>
+
+    <script src="/js/menu-icon.js"></script>
+</body>
+</html>
