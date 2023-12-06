@@ -49,50 +49,16 @@
             <div class="content-2">
                 <h2>สินค้ามาใหม่</h2>
                 <div class="products-rows" id="productCarousel">
+                    <% Object.values(products).forEach(function (item) {%>
                     <div class="product">
                         <div class="img-product">
-                            <img src="images/p1.gif" alt="ภาพสินค้า  1">
+                            <img src="images/products/<%= item.productpic %>" alt="ภาพสินค้า">
                         </div>
-                        <h2 class="name-product">สินค้า 1</h2>
-                        <p class="price">220 บาท</p>
-                        <button class="onder">ส่งซื้อสินค้า</button>
+                        <h2 class="name-product"><%= item.nameproduct %></h2>
+                        <p class="price"><%= item.price %> บาท</p>
+                        <button class="onder"><a href="<%= item.linkproduct %>">สั้งซื้อสินค้า</a></button>
                     </div>
-
-                    <div class="product">
-                        <div class="img-product">
-                            <img src="images/p1.gif" alt="ภาพสินค้า  1">
-                        </div>
-                        <h2 class="name-product">สินค้า 2</h2>
-                        <p class="price">220 บาท</p>
-                        <button class="onder">ส่งซื้อสินค้า</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="img-product">
-                            <img src="images/p1.gif" alt="ภาพสินค้า  1">
-                        </div>
-                        <h2 class="name-product">สินค้า 3</h2>
-                        <p class="price">220 บาท</p>
-                        <button class="onder">ส่งซื้อสินค้า</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="img-product">
-                            <img src="images/p1.gif" alt="ภาพสินค้า  1">
-                        </div>
-                        <h2 class="name-product">สินค้า 4</h2>
-                        <p class="price">220 บาท</p>
-                        <button class="onder">ส่งซื้อสินค้า</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="img-product">
-                            <img src="images/p1.gif" alt="ภาพสินค้า  1">
-                        </div>
-                        <h2 class="name-product">สินค้า 5</h2>
-                        <p class="price">220 บาท</p>
-                        <button class="onder">ส่งซื้อสินค้า</button>
-                    </div>
+                    <% }) %>
 
                     <a class="prev-product" onclick="prevProduct()">&#10094;</a>
                     <a class="next-product" onclick="nextProduct()">&#10095;</a>

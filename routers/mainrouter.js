@@ -111,10 +111,11 @@ router.get('/home-test', (req, res) => {
     res.render('home')
 })
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     const user = req.session.user;
     if (user) {
-        res.render('index.ejs', { user })
+        const products = await Product.find().exec();
+        res.render('index.ejs', { user, products })
     } else {
         res.redirect('/auth/singup')
     }
