@@ -15,7 +15,7 @@
                 <a href="/product">สินค้า</a>
             </li>
             <li>
-                <a href="/contack">ติดต่อ</a>
+                <a href="/contacks">ติดต่อ</a>
             </li>
             <li>
                 <a href="/payments">การชำระเงิน</a>
@@ -24,10 +24,10 @@
     </div>
     <div class="menu-right">
             <div class="icon-profile">
-                <span class="material-symbols-outlined">
-                    account_circle
-                    </span>
-                <p>Username</p>
+                <div class="profile-user-nav">
+                    <img src="profiles/<%= user.profilepic %>" alt="">
+                </div>
+                <p><a href="/<%= user.username %>"><%= user.username %></a></p>
             </div>
         <div class="menu-icon">
             <span class="material-symbols-outlined menu-icon">
@@ -39,15 +39,15 @@
                 <ul>
                     <div class="icon-profile-m">
                         <div class="popup-user">
-                            <span class="material-symbols-outlined">
-                                account_circle
-                                </span>
-                            <p>Username</p>
+                            <div class="profile-user-nav">
+                                <img src="profiles/<%= user.profilepic %>" alt="">
+                            </div>
+                            <p><a href="/<%= user.username %>"><%= user.username %></a></p>
                         </div>
                     </div><hr class="hr-popup">
                     <li><a href="\">หน้าหลัก</a></li>
                     <li><a href="/product">สินค้า</a></li>
-                    <li><a href="/contack">ติดต่อ</a></li>
+                    <li><a href="/contacks">ติดต่อ</a></li>
                     <li><a href="/payments">ช่องทางการชำระเงิน</a></li>
                 </ul>
             </div>

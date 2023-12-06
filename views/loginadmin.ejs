@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เข้าสู่ระบบ</title>
     <link rel="shortcut icon" href="images/NLYY.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/singin.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="/css/loginadmin.css">
 </head>
 <body>
     <div class="container-singup">
         <div class="content-singup">
             <h2>เข้าสู่ระบบ</h2>
-            <form action="/login" method="post">
+            <form action="/loginadmin" method="POST">
                 <label for="username">ชื่อผู้ใช้ :</label>
                 <input type="text" name="username">
 
@@ -21,11 +20,10 @@
 
                 <input type="submit" value="เข้าสู่ระบบ">
 
-                <p>หรือคุณมีบัญชีแล้ว <a href="/auth/singup">สมัครสมาชิก</a></p>
+                <p>สร้างแอดมิน <a href="/admin/re">เพิ่มแอดมิน</a></p>
             </form>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

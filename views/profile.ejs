@@ -19,7 +19,7 @@
             <div class="profile-left">
                 <div class="content-left-c1">
                     <div class="profile-pic">
-                        <img src="images/user-avatar.png" alt="">
+                        <img src="profiles/<%= user.profilepic %>" alt="">
                     </div>
                 </div>
             </div>
@@ -27,21 +27,24 @@
                 <div class="title-user">
                     <h2>ข้อมูลโปรไฟล์ของคุณ</h2>
                 </div>
-                <form action="/profile" method="get">
+                <form action="/edit-profile" method="POST" enctype="multipart/form-data">
+                    <label for="user_id">User ID ของคุณ</label>
+                    <input type="text" name="user_id" value="<%= user._id %>" readonly>
                     <label for="username">ชื่อผู้ใช้ :</label>
-                    <input type="text" name="username" value="username">
+                    <input type="text" name="username" value="<%= user.username %> ">
     
-                    <label for="email">อีเมล :</label>
-                    <input type="email" name="email" value="email@gmail.com">
+                    <label for="email">อีเมล  :</label>
+                    <input type="email" name="email" value="<%= user.email %>" readonly>
     
                     <label for="password">รหัสผ่าน :</label>
-                    <input type="password" name="password" value="1234567890">
+                    <input type="password" name="password" value="<%= user.password %>" readonly>
 
                     <label for="">เลือกโปรไฟล์</label>
                     <input type="file" name="fileprofile">
 
                     <input class="btn-edit-profile" type="submit" value="แก้ไขโปรไฟล์">
                 </form>
+                <button class="logout">ออกจากระบบ</button>
             </div>
         </div>
     </section>
@@ -49,5 +52,18 @@
     <%-  include('footer') %>
 
     <script src="/js/menu-icon.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const logoutButton = document.querySelector('.logout');
+
+    if (logoutButton) {
+        logoutButton.addEventListener('click', function () {
+    
+            window.location.href = '/auth/singup';  
+        });
+    }
+});
+
+    </script>
 </body>
 </html>

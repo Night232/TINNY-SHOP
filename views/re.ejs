@@ -11,21 +11,20 @@
 <body>
     <div class="container-singup">
         <div class="content-singup">
-            <h2>สมัครสมาชิก</h2>
-            <form action="/insert" method="POST">
+            <h2>สมัครสมาชิกแอดมิน</h2>
+            <form action="/readmin" method="POST">
                 <label for="username">ชื่อผู้ใช้ :</label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="usernameadmin" id="username">
 
                 <label for="email">อีเมล :</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="emailadmin" id="email" required>
 
                 <label for="password">รหัสผ่าน :</label> 
-                <input type="password" name="password" id="password">
+                <input type="password" name="passwordadmin" id="password">
 
                 <input type="submit" value="สมัครสมาชิก">
             </form>
-            <p>หรือคุณมีบัญชีแล้ว <a href="/auth/singin">เข้าสู่ระบบ</a></p>
-            <p>ดูตัวอย่างหน้าเว็บ <a href="/home-test">ดูตัวอย่าง</a></p>
+            <p>เข้าสู่ระบบในนามแอดมิน <a href="/admin/lo">เข้าสู่ระบบ</a></p>
         </div>
     </div>
 

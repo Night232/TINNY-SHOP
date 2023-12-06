@@ -22,7 +22,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #000; /* สีฟ้าเขียว */
+    color: #008080; /* สีฟ้าเขียว */
 }
 
 form {
@@ -32,33 +32,37 @@ form {
 
 label {
     margin-top: 10px;
-    color: #000; /* สีเทา */
+    color: #808080; /* สีเทา */
 }
 
 input {
     padding: 10px;
     margin: 5px 0 10px 0;
-    outline: none;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 input[type="submit"] {
-    background-color: #ff8c00; /* สีส้ม */
+    background-color: #008080; /* สีฟ้าเขียว */
     color: #fff;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #e07b00; /* สีส้มเข้ม */
+    background-color: #006666; /* สีฟ้าเขียวเข้ม */
 }
 
 p {
-    font-size: 19px;
-    font-weight: 500;
-    & a {
-        text-decoration: none;
-        color: #000;
-        border-bottom: 1px solid rgb(237, 199, 8);
-    }
+    text-align: center;
+    margin-top: 15px;
+}
+
+p a {
+    color: #000; /* สีม่วง */
+    text-decoration: none;
+    border-bottom: 2px solid rgb(9, 86, 163);
+}
+
+a:hover {
+    text-decoration: underline;
 }

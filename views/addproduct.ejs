@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพิ่มสินค้า</title>
+
+    <link rel="stylesheet" href="/css/addproduct.css">
+</head>
+<body>
+    <div class="container-products">
+        <div class="content-product">
+            <h2>เพิ่มสินค้า</h2>
+            <form method="POST" action="/product" enctype="multipart/form-data" >
+                <label for="product-name">ชื่อสินค้า</label>
+                <input type="text" name="name" id="productname">
+
+                <label for="price">ราคาสินค้า</label>
+                <input type="number" name="price" id="price">
+
+                <label for="linkproduct">ลิ้งสินค้า :</label>
+                <input type="text" name="linkproduct" id="linkproduct">
+
+                <label for="pic-product">ภาพสินค้า</label>
+                <input type="file" name="productpic" accept="images">
+
+                <input type="submit" value="เพิ่มสินค้า">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

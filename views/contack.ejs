@@ -16,15 +16,16 @@
         <div class="container-contack">
             <h2>ติดต่อเรา</h2>
             <div class="content-contack">
-                <form action="" method="post">
+                <form action="/contack-all" method="POST">
                     <label for="name">ชื่อผู้ใช้:</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" value="<%= user.username %> " readonly>
     
                     <label for="email">อิเมล:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" value="<%= user.email %> " readonly>
     
                     <label for="mssg">ข้อความติดต่อ:</label>
                     <textarea name="des" cols="30" rows="10"></textarea>
+                    <p>ในการติดต่อกรูณาแนบช่องทางติดต่อกลับมาด้วยนะครับ</p>
     
                     <input type="submit" value="ติดต่อ">
                 </form>

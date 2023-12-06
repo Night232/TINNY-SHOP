@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แก้ไขสินค้า</title>
+    <link rel="stylesheet" href="/css/form-edit-product.css">
+</head>
+<body>
+    <div class="container-form-edit-product">
+        <div class="content-edit-form">
+            <h2>แก้ไขสินค้า</h2>
+            <form action="/update-contack" method="POST">
+                <input type="text" name="update_id" value="<%= contack._id %>">
+                     <label for="name">ชื่อผู้ใช้:</label>
+                    <input type="text" name="name" value="<%= contack.name %> " >
+    
+                    <label for="email">อิเมล:</label>
+                    <input type="email" name="email" value="<%= contack.email %> " >
+    
+                    <label for="mssg">ข้อความติดต่อ:</label>
+                    <input type="text" name="des" value="<%= contack.des %>">
+
+                <input type="submit" value="แก้ไขสินค้า">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

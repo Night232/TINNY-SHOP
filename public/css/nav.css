@@ -50,12 +50,9 @@ header {
     font-size: 19px;
 }
 
-.active {
-    border-bottom: 5px solid var(--profile);
-}
 
 .menu ul li:hover {
-    border-bottom: 5px solid var(--profile);
+    border-bottom: 1px solid var(--profile);
 }
 
 .menu-right {
@@ -82,6 +79,21 @@ header {
 
 .icon-profile-m {
     display: none;
+}
+
+.profile-user-nav {
+    padding-right: 10px;
+}
+
+.profile-user-nav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+p a {
+    text-decoration: none;
+    color: #000;
 }
 
 @media screen and (max-width: 780px) {

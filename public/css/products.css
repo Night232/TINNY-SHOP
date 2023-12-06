@@ -24,6 +24,8 @@
 
 .img-product img {
     width: 100%;
+    height: 300px;
+    object-fit: contain;
 }
 
 .onder {
@@ -37,6 +39,11 @@
 .onder:hover {
     background-color: rgb(159, 94, 10);
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 @media screen and (max-width: 780px) {
