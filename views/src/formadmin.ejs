@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="shortcut icon" href="images/NLYY.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/singup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container-singup">
+        <div class="content-singup">
+            <h2>สมัครสมาชิก</h2>
+            <form action="/admin" method="POST">
+
+                <label for="email">อีเมล :</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">รหัสผ่าน :</label> 
+                <input type="password" name="password" id="password">
+
+                <input type="submit" value="สมัครสมาชิก">
+            </form>
+            <p>หรือคุณมีบัญชีแล้ว <a href="/auth/singin">เข้าสู่ระบบ</a></p>
+            <p>ดูตัวอย่างหน้าเว็บ <a href="/home-test">ดูตัวอย่าง</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

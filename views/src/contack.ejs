@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อ</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contack.css">
+    <link rel="shortcut icon" href="images/NLYY.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <%-  include('nav') %>
+    <section class="con-1">
+        <div class="container-contack">
+            <h2>ติดต่อเรา</h2>
+            <div class="content-contack">
+                <form action="/contack-all" method="POST">
+                    <label for="name">ชื่อผู้ใช้:</label>
+                    <input type="text" name="name" value="<%= user.username %> " readonly>
+    
+                    <label for="email">อิเมล:</label>
+                    <input type="email" name="email" value="<%= user.email %> " readonly>
+    
+                    <label for="mssg">ข้อความติดต่อ:</label>
+                    <textarea name="des" cols="30" rows="10"></textarea>
+                    <p>ในการติดต่อกรูณาแนบช่องทางติดต่อกลับมาด้วยนะครับ</p>
+    
+                    <input type="submit" value="ติดต่อ">
+                </form>
+            </div>
+        </div>
+    </section>
+    <%-  include('footer') %>
+
+    <script src="/js/menu-icon.js"></script>
+</body>
+</html>
