@@ -45,7 +45,7 @@ router.get('/:username', getUserByUsername, (req, res) => {
 app.use(express.urlencoded({extended: false}))
 app.use(express.urlencoded({extended: false}))
 app.use(router)
-app.set('views', path.join(__dirname,'views'))
+app.set('views', path.join(__dirname,'views/src'))
 app.set('view engine', 'ejs')
 
 app.use(express.static(path.join(__dirname, 'public')))
